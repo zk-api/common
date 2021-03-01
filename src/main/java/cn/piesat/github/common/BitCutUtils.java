@@ -1,4 +1,4 @@
-package cn.piesat.bd.common;
+package cn.piesat.github.common;
 
 /**
  * 截取bit示例

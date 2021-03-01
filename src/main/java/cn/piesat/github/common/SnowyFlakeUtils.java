@@ -1,4 +1,4 @@
-package cn.piesat.bd.common;
+package cn.piesat.github.common;
 
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
