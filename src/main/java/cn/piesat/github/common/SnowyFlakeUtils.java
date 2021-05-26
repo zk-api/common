@@ -1,6 +1,5 @@
 package cn.piesat.github.common;
 
-import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -10,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2020/9/15 10:50
  * 1. 64bit位组成
  * 2. 0 + 41位时间戳 + 10位机器ID + 12位序列号
- * 支持 (2 ^ 9) -1 = 511台机器
+ * 支持 (2 ^ 10) -1 = 1023台机器
  */
 public class SnowyFlakeUtils {
     /**
@@ -95,6 +94,9 @@ public class SnowyFlakeUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println(Instant.now().toEpochMilli());
+        for (int i = 0; i < 10; i++) {
+            System.out.println(getGlobalId(1));
+
+        }
     }
 }
