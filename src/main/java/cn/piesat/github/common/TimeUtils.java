@@ -21,7 +21,9 @@ import java.util.Map;
  */
 public class TimeUtils {
 
+    /** 年积日位数 */
     private final static String DOY_DECIMAL_FORMAT = "000";
+    /** 小时位数 */
     private final static String HOUR_DECIMAL_FORMAT = "00";
 
     /**
